@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Aplicacion 2</string>
+    <string name="title_activity_saludar">SaludarActivity</string>
+</resources>

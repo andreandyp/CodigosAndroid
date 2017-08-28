@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:onClick="alternarBaile"
+    android:orientation="vertical"
+    tools:context="io.github.andreandyp.aplicacion3.PrincipalActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="89dp">
+
+    <Switch
+        android:id="@+id/bailar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:checked="true"
+        android:text="Controla cuando Crash baila"
+        android:onClick="alternarBaile"
+        tools:layout_editor_absoluteX="371dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <ImageView
+        android:id="@+id/animacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/bailar"
+        android:layout_centerHorizontal="true"
+        tools:layout_editor_absoluteX="321dp"
+        tools:layout_editor_absoluteY="112dp" />
+
+    <!--Hue-->
+
+</RelativeLayout>

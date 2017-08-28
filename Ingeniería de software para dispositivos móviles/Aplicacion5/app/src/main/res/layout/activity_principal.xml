@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.github.andreandyp.aplicacion5.PrincipalActivity">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:layout_marginBottom="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+
+        <RadioButton
+            android:id="@+id/dia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tarde"
+            android:layout_alignBottom="@+id/tarde"
+            android:layout_toStartOf="@+id/tarde"
+            android:onClick="cambiarHora"
+            android:text="Dia" />
+
+        <RadioButton
+            android:id="@+id/tarde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:onClick="cambiarHora"
+            android:text="Tarde" />
+
+        <RadioButton
+            android:id="@+id/noche"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tarde"
+            android:layout_alignBottom="@+id/tarde"
+            android:layout_toEndOf="@+id/tarde"
+            android:onClick="cambiarHora"
+            android:text="Noche" />
+    </RadioGroup>
+
+
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:onClick="cambiarHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/dia"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
